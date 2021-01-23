@@ -1,24 +1,24 @@
-# intropage
+# IntroPage
 
-## Project setup
+IntroPage that contains some description, links
+
+Powered by Vue.js + Vuetifyjs
+
+## Setup
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
+## Build
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+docker build -t windsekirun/intropage .
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Deploy
+```
+docker-compose up -d
+```
+
+## License
+MIT License
