@@ -2,7 +2,7 @@
   <v-container id="main" fill-height class="x-ctn">
     <v-row align="center" justify="center">
       <v-row justify="space-around">
-        <v-avatar size="225">
+        <v-avatar size="150">
           <img src="../assets/profile_akari_square.png" alt="WindSekirun" />
         </v-avatar>
       </v-row>
