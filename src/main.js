@@ -3,10 +3,8 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faBlog, faComment } from '@fortawesome/free-solid-svg-icons'
-// import { faComment } from '@fortawesome/free-regular-svg-icons'
-import { faTwitter, faTelegramPlane, faDiscord, faLinkedin, faGithub, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faTelegramPlane, faDiscord, faLinkedin, faGithub, faStackOverflow, faAndroid } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
-
 
 library.add(
   faGithub,
@@ -16,7 +14,8 @@ library.add(
   faLinkedin,
   faBlog,
   faComment,
-  faStackOverflow
+  faStackOverflow,
+  faAndroid
 )
 
 Vue.component('font-awesome-layers', FontAwesomeLayers)

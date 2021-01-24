@@ -1,9 +1,9 @@
 <template>
-  <v-container id="main" fill-height class="x-ctn">
+  <v-container id="main" fill-height class="x-ctn primary-element">
     <v-row align="center" justify="center">
-      <v-row justify="space-around">
+      <v-row justify="space-around" class="mb-2">
         <v-avatar size="150">
-          <img src="../assets/profile_akari_square.png" alt="WindSekirun" />
+          <img src="../assets/profile_akari_circle.png" alt="WindSekirun" />
         </v-avatar>
       </v-row>
       <v-row class="text-center">
@@ -12,11 +12,18 @@
             WindSekirun (wind.seo)
           </h1>
           <h3 class="display-1 font-weight-light mb-1">
-            Kotlin Lover, Android Devloper
+            <font-awesome-icon
+              :icon="['fab', 'android']"
+              size="1x"
+              v-bind="attrs"
+              v-on="on"
+              id="primary"
+            /> 
+            Android Developer
           </h3>
           <h3 class="font-weight-light">
             Current working on
-            <a href="https://github.com/kakaobank">@kakaobank</a>
+            <a href="https://github.com/kakaobank" id="primary-element">@kakaobank</a>
           </h3>
         </v-col>
         <v-col cols="12">
@@ -39,11 +46,12 @@
                     size="3x"
                     v-bind="attrs"
                     v-on="on"
+                    class="platform-icon"
                   />
                 </template>
                 <span>{{ contact.tooltip }}</span>
               </v-tooltip>
-              <p id="platform">{{ contact.platform }}</p>
+              <p class="platform-text">{{ contact.platform }}</p>
             </a>
           </v-row>
         </v-col>
@@ -72,7 +80,7 @@ export default {
       },
       {
         platform: "KakaoTalk",
-        link: "/",
+        link: "http://qr.kakao.com/talk/jlG8wooqfn3tOVgum_4jJamsMhc-",
         icon: "comment",
         tooltip: "WindSekirun",
         iconkind: "fas",
@@ -114,8 +122,20 @@ export default {
 </script>
 
 <style>
+.platform-text {
+   margin-top: 0.5em;
+   color: #d8dee9;
+}
+.platform-icon {
+  color: #88c0d0;
+}
+.primary-element {
+  color: #d8dee9;
+}
+#primary-element {
+  color: #d8dee9;
+}
 a {
   text-decoration: none;
-  color: #252525;
 }
 </style>

@@ -1,23 +1,29 @@
 <template>
   <v-app>
-    <v-main>
-      <Main/>
+    <v-main id="page">
+      <Main />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import Main from './components/Main';
+import Main from "./components/Main";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
     Main,
   },
 
-  data: () => ({
-    //
-  }),
+  data: () => ({}),
+
+  methods: {},
 };
 </script>
+
+<style>
+#page {
+  background-color: #2e3440;
+}
+</style>
